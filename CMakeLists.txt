@@ -1,6 +1,9 @@
-cmake_minimum_required(VERSION 3.17)
+cmake_minimum_required(VERSION 3.12)
 project(myAcct)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(myAcct main.cpp Account.cpp Account.h Transaction.cpp Transaction.h)
+enable_testing()
+
+add_subdirectory(src)
+add_subdirectory(test)
